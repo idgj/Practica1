@@ -1,0 +1,17 @@
+Ignorar archivos
+
+creamos un archivo .gitignore
+
+$ touch .gitignore
+
+agregamos este contenido a .gitignore
+
+.DS_Store
+log/*.log
+tmp/**/*
+config/database.yml
+db/*.sqlite3
+
+Atención!!! Git tiene la característica de ignorar por default cualquier directorio que este vacio. Por lo cual si deseamos que el directorio vendor, log y tmp sean incluidos debemos de tener algo en ellos. Si no tenemos nada siempre podemos crear un archivo .gitignore dentro de ellos.
+
+$touch tmp/.gitignore log/.gitignore vendor/.gitignore
